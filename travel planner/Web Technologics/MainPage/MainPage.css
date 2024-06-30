@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('Mainimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+h4{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+}
+h3{
+    color: #333;
+    font-size: 20px;
+    margin-top: 20px;
+}
+h2{
+    color: #333;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.menu-bar{
+    text-align: center;
+    font-size: 17px;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 8px;
+    padding: 20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-bar ul li img{
+    margin-top: 0;
+    height: 40px;
+   
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    /*background: rgba(0,0,0,0.3);*/
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+    
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    /* background: transparent; */
+    border-radius: 0;
+    text-align: left;
+    
+}
+.menu-bar ul li .sub-menu ul li a:hover{
+   
+    text-align: left;
+    color: brown;
+    
+    
+}
+.register-btn{
+    background: #ff5361;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px;
+}
+.nav-links li{
+    list-style: none;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 15%;  
+}
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background-color: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 20px;
+    margin-top: 5px;
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+/*--------------------------*/
+.sub-title{
+    margin: 50px 0px 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+.exclusive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px
+}
+.exclusive div img{
+    width: 100%;
+    border-radius: 15px;
+}
+/*-----------------------------*/
+.trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.trending div img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*----------------------------*/
+.service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.service div img{
+    width: 30%;
+    border-radius: 10px;
+}
+/*----------------------------*/
+.Stories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.Stories div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Stories div {
+    position: relative;
+    text-align: center;
+}
+.Stories p{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 26px;
+}
+/*-------------------------------- */
+.start-btn{
+    text-decoration: none;
+    background: #ff5361;
+    color: #fff;
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+/*-------------------------------- */
+.aboutus{
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+.aboutus h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+/*-------------------------- */
+.footer{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 5px;
+    margin: 50px 0 5px;
+    text-align: center;
+}
+.footer img{
+    width: 3%;
+    border-radius: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    margin: 20px 0px;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+/*---------------------------- */
